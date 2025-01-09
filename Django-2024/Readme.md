@@ -58,3 +58,23 @@
 ## Running Django
 
 ```django-admin startproject mysite```
+
+- Every folder has ```__init__.py``` file which tells every directory that this is a package
+- ```asgi.py``` stands for Asynchronous Server Gateway Interface : its like bridge between web server and django application - which in turn is used to handle multiple requests at the same time
+- ```settings.py``` : contains all the settings for the project - including database settings, secret key, installed apps, middlewares, templates, static urls, css, or to embed js to project
+
+- ```urls.py``` : contains all the urls for the project
+
+- ```wsgi.py``` : Web Server Gateway Interface - used to deploy the project to a web server
+
+- ```manage.py``` : used to run commands for the project - acts as wrapper around django adminstrative tasks
+
+---
+
+To start app
+
+```python3 manage.py startapp myapp```
+
+To run the server:
+
+```python3 manage.py runserver```
