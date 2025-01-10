@@ -78,3 +78,37 @@ To start app
 To run the server:
 
 ```python3 manage.py runserver```
+
+
+## Inside ```myapp``` folder
+
+- ```admin.py``` : used to register models to admin interface
+- ```apps.py``` : used to configure the app
+- ```models.py``` : used to define database models
+- ```tests.py``` : used to write tests
+- ```views.py``` : used to write views
+- ```migrations``` : used to store how the database has changed over time
+
+
+To create migrations:
+
+```python3 manage.py makemigrations```
+
+To apply migrations:
+
+```python3 manage.py migrate```
+
+To apply shell
+
+```python3 manage.py shell```
+
+To interact in shell
+
+```from myapp .models import Tour```
+
+```to1 = Tour(origin_country="Japan", destination_country="China", number_of_nights=10, price=1500)```
+
+```to1.save()```
+
+```to1.destination_country```
+
